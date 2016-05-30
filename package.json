@@ -1,0 +1,23 @@
+{
+  "name": "sorted-linked-list",
+  "description": "An ADT implemenation of a sorted, singly-linked, linked-list",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/markpete/SortedLinkedList.git"
+  },
+  "author": "Mark Peterson <mark.peterson@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markpete/SortedLinkedList/issues"
+  },
+  "homepage": "https://github.com/markpete/SortedLinkedList",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "chai": "^3.5.0"
+  }
+}
