@@ -9,6 +9,13 @@
   },
   "author": "Mark Peterson <mark.peterson@live.com>",
   "license": "MIT",
+  "keywords": [
+    "linked list",
+    "sorted linked list"
+    "data structure",
+    "abstract data type",
+    "adt"
+  ],
   "bugs": {
     "url": "https://github.com/markpete/SortedLinkedList/issues"
   },
