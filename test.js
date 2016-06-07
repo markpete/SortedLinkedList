@@ -42,12 +42,14 @@ describe('sorted-linked-list', function() {
 	    expect(myList.length).to.equal(0);
 	});
 
-	it('create a list via array', function () {
+	it('list to and from array', function () {
 		myList = new LinkedList({values: ['dog', 'liger', 'cat', 'donkey']});
 		expect(myList).to.not.be.null;
 		expect(myList).to.be.ok;
 		expect(myList.length).to.equal(4);
 		expect(myList.head.data).to.equal('cat');
+		var myArray = myList.toArray();
+		expect(myArray).to.deep.equal(['cat', 'dog', 'donkey', 'liger']);
 	});
 
 	it('validate contains', function () {
