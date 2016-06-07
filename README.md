@@ -1,7 +1,7 @@
 [![build status](https://travis-ci.org/markpete/SortedLinkedList.svg?branch=master)](http://travis-ci.org/markpete/SortedLinkedList)
 
 # Sorted Linked List Library #
-_This repository contains a library for managing a sorted, singly-linked, linked list.  The concept behind a linked-list is that developers can maintain an in-memory data structure to store a set of items without initially knowing the size and therefore without having to re-allocate arrays each time a limit is reached.  Furthermore in this implementation the overall sort is maintained on the data._
+_This repository contains a library for managing a sorted, singly-linked, linked list.  The concept behind a linked-list is that developers can maintain an in-memory data structure to store a set of items without initially knowing the size and therefore without having to re-allocate arrays each time a limit is reached.  Furthermore in this implementation the overall sort is maintained on the data and as the list get large, it converts to a skip-list to improve performance._
 
 ### Installation ###
 ```
@@ -70,4 +70,10 @@ var current = myList.iterator();
 while(!(x = current.next()).done) {
    console.log(x.value);
 };
+```
+### - toArray ###
+Converts the LinkedList to an Array
+```
+var myArray = myList.toArray();
+console.log(myArray.toString());
 ```
