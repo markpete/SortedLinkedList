@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "mocha": "^2.5.3",
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "random-string": "^0.1.2"
   }
 }
