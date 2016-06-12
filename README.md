@@ -1,4 +1,9 @@
-[![build status](https://travis-ci.org/markpete/SortedLinkedList.svg?branch=master)](http://travis-ci.org/markpete/SortedLinkedList)
+[![Travis](https://img.shields.io/travis/markpete/SortedLinkedList.svg?maxAge=2592000)](http://travis-ci.org/markpete/SortedLinkedList)
+[![GitHub issues](https://img.shields.io/github/issues/markpete/SortedLinkedList.svg?maxAge=2592000)](https://github.com/markpete/SortedLinkedList/issues)
+[![npm](https://img.shields.io/npm/dt/sorted-linked-list.svg?maxAge=2592000)](https://www.npmjs.com/package/sorted-linked-list)
+
+[![npm](https://img.shields.io/npm/v/sorted-linked-list.svg?maxAge=2592000)](https://www.npmjs.com/package/sorted-linked-list)
+[![npm](https://img.shields.io/npm/l/sorted-linked-list.svg?maxAge=2592000)](https://www.npmjs.com/package/sorted-linked-list)
 
 # Sorted Linked List Library #
 _This repository contains a library for managing a sorted, singly-linked, linked list.  The concept behind a linked-list is that developers can maintain an in-memory data structure to store a set of items without initially knowing the size and therefore without having to re-allocate arrays each time a limit is reached.  Furthermore in this implementation the overall sort is maintained on the data and as the list get large, it converts to a skip-list to improve performance._
