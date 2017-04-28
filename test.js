@@ -59,4 +59,61 @@ describe('sorted-linked-list', function() {
 		expect(myList.contains('one')).to.equal.true;
 		expect(myList.contains('two')).to.equal.false;
 	});
+
+	it('performance test of skip lists', function(done) {
+		var randomString = require("random-string");
+		var InputValues = [];
+		var DeleteValues = [];
+		var count = 100000;
+
+		this.timeout(3100);
+
+		var Timer = () => {
+		   return new Date().getTime();
+		};
+
+		var Validate = () => {
+		   var i = 0;
+		   var current = myList.head;
+		   while(current.next) {
+		      if(current.data > current.next.data) {
+		         i++;
+		      }
+		      current = current.next;
+		   }
+		   expect(i).to.equal(0, "Found " + i + " items misordered");
+		};
+
+		var currString;
+		for(x=0; x<count; x++) {
+		   currString = randomString();
+		   InputValues.push(currString);
+		   if(x % 10 === 0) {
+		      DeleteValues.push(currString);
+		   }
+		}
+
+		var start, end;
+		start = Timer();
+
+		var myList = new LinkedList();
+		for(x=0; x<count; x++) {
+		   myList.insert(InputValues[x]);
+		}
+
+		end = Timer();
+
+		expect(end-start).to.be.below(2500, "LinkedList insert " + count + " strings: " + (end - start) + "ms");
+		Validate();
+
+		start = Timer();
+		for(x=0; x < DeleteValues.length; x++) {
+		   myList.remove(DeleteValues[x]);
+		}
+		end = Timer();
+
+		expect(end-start).to.be.below(600, "LinkedList remove " + DeleteValues.length + " strings: " + (end - start) + "ms");
+		Validate();
+		setTimeout(done, 300);
+	});
 });
