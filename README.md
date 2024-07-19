@@ -1,4 +1,4 @@
-[![Travis](https://img.shields.io/travis/markpete/SortedLinkedList.svg?maxAge=2592000)](http://travis-ci.org/markpete/SortedLinkedList)
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/LwQz5aa6ked9L3S5xGXPjh/av9hHj7794ZSTU8tS2aif/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/LwQz5aa6ked9L3S5xGXPjh/av9hHj7794ZSTU8tS2aif/tree/master)
 [![GitHub issues](https://img.shields.io/github/issues/markpete/SortedLinkedList.svg?maxAge=2592000)](https://github.com/markpete/SortedLinkedList/issues)
 [![npm](https://img.shields.io/npm/dt/sorted-linked-list.svg?maxAge=2592000)](https://www.npmjs.com/package/sorted-linked-list)
 
